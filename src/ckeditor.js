@@ -56,7 +56,7 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Code
+	Code,
 ];
 
 // Editor configuration.
