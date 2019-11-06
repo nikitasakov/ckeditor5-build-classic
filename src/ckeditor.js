@@ -32,6 +32,8 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
+import Emoji from '@wwalc/ckeditor5-emoji/src/emoji';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -61,6 +63,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	Code,
 	Strikethrough,
+	Emoji,
 ];
 
 // Editor configuration.
@@ -85,6 +88,8 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'code',
+			'|',
+			'emoji',
 		]
 	},
 	image: {
